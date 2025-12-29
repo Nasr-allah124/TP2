@@ -1,0 +1,87 @@
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, white, wheat);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Conteneur du formulaire */
+.formulaire {
+  width: 500px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre */
+.formulaire h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+.formulaire label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Champs input */
+.formulaire input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  transition: .4 ease-in
+}
+
+/* Effet au focus */
+.formulaire input:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Bouton */
+.formulaire button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Effet au survol */
+.formulaire button:hover {
+  background-color: #1a5fd1;
+  transform: translateY(-2px);
+}
+
+/* Effet clic */
+.formulaire button:active {
+  transform: translateY(0);
+}
+

@@ -1,0 +1,449 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,green,yellow);
+
+}
+.all{
+    margin: auto;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    width: 300px;
+    height: 300px;
+    
+}
+.container{
+    border: black 5px solid;
+    width: 300px ;
+    height: 300px;
+    
+}
+#precedent,#suivant{
+    padding: 5px;
+    background: linear-gradient(90deg,rgb(0, 162, 255),yellow);
+    border-radius: 12px;
+}
+#precedent:hover,#suivant:hover{
+    transform: scale(1.1);
+    background: linear-gradient(90deg,rgb(91, 199, 228),yellow);
+
+}
+#image1,#image2,#image3,#image4{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_ele{
+    padding: 5px;
+    border-radius: 12px;
+    width: 150px;
+    height: 180px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+.menu{
+    display: grid;
+    justify-content: center;
+}
+.elements div{
+    margin:12px;
+    border-radius: 12px;
+}
+.elements div:hover{
+    background: black;
+    cursor: pointer;
+
+}
+.elements{
+    width: 150px;
+    background: rgb(255, 0, 115);
+    border-radius:0 0 12px 12px;
+    display: none;
+    
+  
+}
+#title{
+    background: none;
+    width: 150px;
+    background: rgb(255, 0, 115); 
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:12px 12px 0 0;
+}
+.elements div:first-of-type{
+    margin-top: 0px;
+}
+.elements.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+.chrono{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+#temps{
+    font-size: 30px;
+    background: black;
+    color: white;
+    padding: 5px;
+   
+}
+
+
+
+.Exo8{
+    display: grid;
+    justify-content: center;  
+}
+#div1{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(90deg,gray,black);
+    
+}
+#div1:hover{
+    background: linear-gradient(90deg,rgb(134, 88, 88),rgb(237, 207, 207)) ;
+}
+
+
+
+
+
+
+
+.Exo9{
+     display: grid;
+    justify-content: center;
+   
+
+}
+.list{
+   
+    background:linear-gradient(90deg,black,yellow);
+    width: 400px;
+    height: 400px;
+
+}
+#tache{
+    width: 330px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border: 2px brown solid;
+    background: black;
+    border-radius: 8px;
+    color: white;
+}
+#ajouter{
+    background: green;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+li{
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.Exo10{
+    display: grid;
+    justify-content: center;
+    
+    
+}
+#ouvrir{
+    border: none;
+    background: orange;
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#dialog{
+    border: none;
+    background: rgb(100, 210, 232);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+}
+#fermer{
+    border: none;
+    background: orangered;
+    width: 100px;
+    border-radius: 8px;
+    margin: 12px;
+   
+}
+
+
+
+
+
+
+
+
+
+.Exo11{
+    display: grid;
+    justify-content: center;
+}
+p{
+    background: wheat;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    
+
+}
+#search{
+    border: none;
+    padding: 5px;
+    outline: none;
+    border: 2px black solid;
+    border-radius: 8px;
+    width: 300px;
+
+}
+
+
+
+
+
+
+
+
+.Exo12{
+    display: grid;
+    justify-content: center;
+  
+
+ 
+
+}
+.responsive{
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.responsive div{
+    padding: 5px;
+    background:blue;
+    width: 300px;
+    margin: 12px;
+    border-radius: 12px;
+    height: 40px;
+    font-size: 30px;
+}
+@media screen and (max-width:650px) {
+    .responsive{
+       grid-template-columns: repeat(1,1fr);
+       gap: 30px;
+       
+    }  
+   .Exo12{
+    margin-bottom: 200px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Exo13 {
+  display: grid;
+  justify-content: center;
+}
+
+#ba {
+  display: grid;
+  justify-content: center;
+}
+
+#bare_pere {
+  background: white;
+  width: 500px;
+  height: 25px;
+  padding: 5px;
+  margin: 20px;
+}
+
+#bare {
+  width: 0%;
+  height: 25px;
+  background: linear-gradient(90deg, green, rgb(22, 151, 22));
+  transition: width 0.05s linear;
+}
+
+#progre {
+  width: 200px;
+  height: 30px;
+  justify-self: center;
+  background: rgb(73, 145, 189);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.Exo14{
+    display: grid;
+    justify-content: center;
+}
+#pere{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 100px;
+}
+#elem1 {
+    background: rgb(1, 72, 1);
+    margin: 15px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 12px;
+    color: wheat;
+    text-align: center;
+    border: none;
+}
+#elem2 {
+    background: rgb(1, 72, 1);
+    margin: 15px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 12px;
+    color: wheat;
+    text-align: center;
+    border: none;
+}
+#elem3 {
+    background: rgb(1, 72, 1);
+    margin: 15px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 12px;
+    color: wheat;
+    text-align: center;
+    border: none;
+}
+ 
+#elements{
+    width: 200px;
+    height: 200px;
+    border: 5px black dashed;
+}
+#depose{
+    border: 5px black dashed;
+    text-align: center;
+    font-size: 15px;
+     width: 200px;
+    height: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.Exo15{
+    display: grid;
+    justify-content: center;
+}
+#ktba{
+    background: rgb(205, 201, 201);
+    padding: 5px;
+    margin-bottom: 2px;
+    height: 40px;
+}
+#btndiv{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 60px;
+}
+#btn_basc{
+    justify-self: center;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

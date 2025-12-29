@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg,black,rgb(38, 158, 232));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin: 7px;
+    background: linear-gradient(180deg,blue,yellow);
+    color: rgb(0, 255, 191);
+
+}
+.inpu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+#inst{
+    margin-top: 6px;
+}
+small{
+    
+    width: 95%;
+    height: 50px;
+    background: linear-gradient(90deg,rgb(38, 158, 232),white);
+    text-align: end;
+    border-radius: 12px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    margin-bottom: 12px;
+    margin-top: 12px;
+      
+}
+
+.cacl{
+     border: 5px  black solid;
+     border-radius: 12px;
+    
+    
+     
+
+}
